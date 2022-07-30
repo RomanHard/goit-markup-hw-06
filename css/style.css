@@ -218,6 +218,37 @@ body {
   border-radius: 4px;
 }
 
+.text-inputs {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--one-text-color);
+}
+
+.policy {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+
+  color: var(--four-text-color);
+}
+
+.name,
+.tel,
+.mail,
+.coments {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.12;
+  letter-spacing: 0.01em;
+
+  color: var(--four-text-color);
+}
+
 .modal-btn {
   font-weight: 700;
   font-size: 16px;
