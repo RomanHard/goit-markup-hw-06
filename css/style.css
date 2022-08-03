@@ -210,6 +210,15 @@ body {
   height: 18px;
 }
 
+.contact-form-my:focus ~ .modal-svg {
+  background-color: var(--two-text-color);
+}
+
+.contact-form-my:focus {
+  border: 1px solid var(--two-text-color);
+  border-radius: 4px;
+}
+
 .modal-svg {
   height: 100%;
   width: 100%;
