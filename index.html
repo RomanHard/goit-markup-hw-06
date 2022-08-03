@@ -70,30 +70,32 @@
               <svg data-modal-close class="icon-close">
                 <use href="./images/sprite.svg#icon-close"></use>
               </svg>
-              <p class="text-inputs">Оставьте свои данные, мы вам перезвоним</p>
-              <div class="inputs">
-                <div class="name">
-                  <label for="name">Имя</label>
-                  <input type="text" name="name" id="name" autofocus />
+              <form class="contact-form">
+                <p class="text-inputs">Оставьте свои данные, мы вам перезвоним</p>
+                <div class="inputs">
+                  <div class="name">
+                    <label for="name">Имя</label>
+                    <input type="text" name="name" id="name" class="contact-form-my" autofocus />
+                  </div>
+                  <div class="tel">
+                    <label for="tel">Телефон</label>
+                    <input type="tel" name="tel" id="tel" class="contact-form-my" />
+                  </div>
+                  <div class="mail">
+                    <label for="mail">Почта</label>
+                    <input type="email" name="mail" id="mail" class="contact-form-my" />
+                  </div>
+                  <div class="coments">
+                    <label for="coment">Комментарий</label>
+                    <textarea
+                      class="coment-texteria"
+                      name="coment"
+                      id="coment"
+                      placeholder="Введите текст"
+                    ></textarea>
+                  </div>
                 </div>
-                <div class="tel">
-                  <label for="tel">Телефон</label>
-                  <input type="tel" name="tel" id="tel" />
-                </div>
-                <div class="mail">
-                  <label for="mail">Почта</label>
-                  <input type="email" name="mail" id="mail" />
-                </div>
-                <div class="coments">
-                  <label for="coment">Комментарий</label>
-                  <textarea
-                    name="coment"
-                    id="coment"
-                    rows="8"
-                    placeholder="Введите текст"
-                  ></textarea>
-                </div>
-              </div>
+              </form>
               <div class="policy">
                 <input type="checkbox" name="policy" id="policy" />
                 <label for="policy"
@@ -102,7 +104,7 @@
                 >
               </div>
               <div class="btn-form">
-                <button type="submit">Отправить</button>
+                <button class="go" type="submit">Отправить</button>
               </div>
             </div>
           </div>
@@ -443,6 +445,9 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="email-input">
+          <p class="email-input-text">Подпишитесь на рассылку</p>
         </div>
       </div>
     </footer>
