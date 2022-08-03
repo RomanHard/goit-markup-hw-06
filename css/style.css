@@ -243,6 +243,14 @@ body {
   background-color: #188ce8;
 }
 
+.text-inputs {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--one-text-color);
+}
+
 .motto {
   font-weight: 900;
   font-size: 44px;
