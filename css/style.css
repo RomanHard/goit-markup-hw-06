@@ -201,6 +201,20 @@ body {
   height: 30px;
   width: 30px;
 }
+
+.modal-icon-1 {
+  position: absolute;
+  top: 45%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+}
+
+.modal-svg {
+  height: 100%;
+  width: 100%;
+}
+
 .modal {
   display: block;
   height: 582px;
@@ -234,6 +248,7 @@ body {
   display: block;
   margin: 0 auto;
 }
+
 .btn-form {
   align-items: center;
   text-align: center;
@@ -257,7 +272,7 @@ body {
   height: 40px;
   margin-top: 4px;
   margin-bottom: 10px;
-  padding-left: 20px;
+  padding-left: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -284,6 +299,7 @@ body {
 .tel,
 .mail,
 .coments {
+  position: relative;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
@@ -308,6 +324,12 @@ body {
   color: var(--four-text-color);
   text-align: center;
 }
+
+.checkbox-policy {
+  height: 15px;
+  width: 16px;
+}
+
 .politic {
   font-size: 14px;
   line-height: 2;
