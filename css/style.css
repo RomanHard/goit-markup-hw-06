@@ -145,7 +145,6 @@ body {
 .link-number:hover,
 .link-number:focus {
   transition-property: color;
-
   color: var(--two-text-color);
 }
 
@@ -202,26 +201,19 @@ body {
   width: 30px;
 }
 
-.modal-icon-1 {
+.contact-form-my:focus,
+.coment-texteria:focus,
+.contact-form-footer:focus {
+  outline: none;
+  border: 1px solid #188ce8;
+}
+
+.modal-svg {
   position: absolute;
   top: 45%;
   left: 12px;
   width: 18px;
   height: 18px;
-}
-
-.contact-form-my:focus ~ .modal-svg {
-  background-color: var(--two-text-color);
-}
-
-.contact-form-my:focus {
-  border: 1px solid var(--two-text-color);
-  border-radius: 4px;
-}
-
-.modal-svg {
-  height: 100%;
-  width: 100%;
 }
 
 .modal {
@@ -274,9 +266,12 @@ body {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
+  margin-top: 30px;
 }
 
 .contact-form-my {
+  transition-duration: var(--duration-сss-transition);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
   height: 40px;
   margin-top: 4px;
@@ -293,6 +288,10 @@ body {
 
 .modal-btn:hover {
   background-color: #188ce8;
+}
+
+.contact-form-my:focus + .modal-svg {
+  fill: #188ce8;
 }
 
 .text-inputs {
@@ -316,13 +315,14 @@ body {
   color: var(--four-text-color);
 }
 .coment-texteria {
+  transition-duration: var(--duration-сss-transition);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
   height: 120px;
   padding: 12px 16px;
   resize: none;
   margin-top: 4px;
   margin-bottom: 20px;
-  padding-left: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -608,6 +608,8 @@ body {
 }
 
 .social-list-icon-svg-two {
+  transition-duration: var(--duration-сss-transition);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: currentColor;
   width: 106px;
   height: 60px;
@@ -688,6 +690,8 @@ body {
 }
 
 .exemple-link {
+  transition-duration: var(--duration-сss-transition);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   text-decoration: none;
   transition: box-shadow var(--duration-сss-transition) cubic-bezier(0.4, 0, 0.2, 1);
@@ -783,6 +787,8 @@ body {
 }
 
 .contact-form-footer {
+  transition-duration: var(--duration-сss-transition);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
