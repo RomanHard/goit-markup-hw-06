@@ -781,4 +781,50 @@ body {
   text-transform: uppercase;
   color: var(--five-text-color);
 }
+
+.contact-form-footer {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--six-text-color);
+  color: var(--five-text-color);
+  padding-left: 16px;
+  margin-right: 12px;
+}
+
+.email-input-flex {
+  display: flex;
+  align-items: center;
+
+  margin-top: 20px;
+}
+.go-footer {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  background: var(--two-text-color);
+  color: var(--five-text-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  padding-left: 29px;
+  padding-right: 62px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.go-footer-send {
+  position: relative;
+}
+.send {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  right: 15%;
+  top: 25%;
+}
 /* =======/FOTER======== */
