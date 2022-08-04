@@ -199,6 +199,13 @@ body {
   right: 8px;
   height: 30px;
   width: 30px;
+  border-radius: 50%;
+  background: var(--five-text-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-image: url(../images/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
 }
 
 .contact-form-my:focus,
@@ -250,15 +257,6 @@ body {
   border-color: var(--two-text-color);
 }
 
-/**
-.modal-svg-chek {
-  position: absolute;
-  left: 8%;
-  top: 18%;
-  width: 15px;
-  height: 16px;
-}
-**/
 .modal {
   display: block;
   height: 582px;
@@ -267,6 +265,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40px;
   transform: translate(-50%, -50%);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -343,7 +342,6 @@ body {
   line-height: 1.15;
   letter-spacing: 0.03em;
   color: var(--one-text-color);
-  margin-top: 40px;
   margin-bottom: 12px;
 }
 .name,
@@ -388,8 +386,6 @@ body {
 }
 
 .contact-form {
-  margin-right: 40px;
-  margin-left: 40px;
   justify-content: center;
 }
 

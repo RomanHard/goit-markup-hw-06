@@ -67,9 +67,7 @@
           <button data-modal-open type="button" class="modal-btn">Заказать услугу</button>
           <div data-modal class="backdrop is-hidden">
             <div class="modal">
-              <svg data-modal-close class="icon-close">
-                <use href="./images/sprite.svg#icon-close"></use>
-              </svg>
+              <button data-modal-close class="icon-close"></button>
               <form class="contact-form">
                 <p class="text-inputs">Оставьте свои данные, мы вам перезвоним</p>
                 <div class="inputs">
@@ -104,18 +102,18 @@
                     ></textarea>
                   </div>
                 </div>
+                <div class="policy">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="policy" class="checkbox-policy" />
+                    <span class="icon"></span>
+                    Соглашаюсь с рассылкой и принимаю
+                    <a href="./" class="politic">Условия договора</a>
+                  </label>
+                </div>
+                <div class="btn-form">
+                  <button class="go" type="submit">Отправить</button>
+                </div>
               </form>
-              <div class="policy">
-                <label class="checkbox-label">
-                  <input type="checkbox" name="policy" class="checkbox-policy" />
-                  <span class="icon"></span>
-                  Соглашаюсь с рассылкой и принимаю
-                  <a href="./" class="politic">Условия договора</a>
-                </label>
-              </div>
-              <div class="btn-form">
-                <button class="go" type="submit">Отправить</button>
-              </div>
             </div>
           </div>
         </div>
@@ -456,7 +454,7 @@
             </li>
           </ul>
         </div>
-        <div class="email-input">
+        <form class="email-input">
           <p class="email-input-text">Подпишитесь на рассылку</p>
           <div class="email-input-flex">
             <input
@@ -473,7 +471,7 @@
               </svg>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
