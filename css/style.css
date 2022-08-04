@@ -216,6 +216,46 @@ body {
   height: 18px;
 }
 
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-policy {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.checkbox-policy:checked + .icon {
+  background-color: var(--two-text-color);
+  background-image: url(../images/check-on.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  border-color: var(--two-text-color);
+}
+
+/**
+.modal-svg-chek {
+  position: absolute;
+  left: 8%;
+  top: 18%;
+  width: 15px;
+  height: 16px;
+}
+**/
 .modal {
   display: block;
   height: 582px;
@@ -327,16 +367,12 @@ body {
   border-radius: 4px;
 }
 .policy {
+  position: relative;
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
   color: var(--four-text-color);
   text-align: center;
-}
-
-.checkbox-policy {
-  height: 15px;
-  width: 16px;
 }
 
 .politic {
